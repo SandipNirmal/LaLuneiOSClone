@@ -6,14 +6,14 @@ import {
   Icon
 } from 'react-native-elements';
 
-import Movies from './screens/movies';
+import MoviesStack from './screens/movies';
 import TvShows from './screens/tvShows';
 import Search from './screens/search';
 import Settings from './screens/settings';
 
 export const AppRoot = TabNavigator({
   Movies: {
-    screen: Movies,
+    screen: MoviesStack,
     navigationOptions: {
       tabBarLabel: 'Movies',
       tabBarIcon: ({tintColor}) => <Icon name="movie" size={30} color={tintColor}/>,

@@ -1,4 +1,6 @@
-{
+// Note that the renaming of .json file as js is intentional
+// we do not want to use a json loader yet
+export const LatestMovies =  {
   "results": [
     {
       "vote_count": 2122,

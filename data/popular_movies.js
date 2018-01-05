@@ -1,4 +1,6 @@
-{
+// Note that the renaming of .json file as js is intentional
+// we do not want to use a json loader yet
+export default {
   "page": 1,
   "total_results": 19828,
   "total_pages": 992,

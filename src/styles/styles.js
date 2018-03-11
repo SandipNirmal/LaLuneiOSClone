@@ -5,6 +5,7 @@ const marginTop = APP_CONSTANT.height / APP_CONSTANT.goldenRatio
 const primaryColor = '#32CD32'
 const headerBackgroundColor = '#222222'
 const headerBorderColor = '#181818'
+const backgroundColor = 'rgba(32, 32, 32, 0.9)'
 
 const style = StyleSheet.create({
   container: {
@@ -17,7 +18,7 @@ const style = StyleSheet.create({
     paddingBottom: 30,
     paddingLeft: 10,
     paddingRight: 10,
-    backgroundColor: 'rgba(32, 32, 32, 0.9)'
+    backgroundColor: backgroundColor
   },
   flatListContainer: {
     flex: 1,
@@ -74,7 +75,7 @@ const style = StyleSheet.create({
   },
   castBiography: {
     padding: 20,
-    backgroundColor: 'rgba(32, 32, 32, 0.9)'
+    backgroundColor: backgroundColor
   },
   avatarSize: {
     // backgroundColor: '#545454',

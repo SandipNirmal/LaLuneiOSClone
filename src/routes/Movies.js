@@ -7,7 +7,7 @@ import AllMovies from '../components/movies/AllMovies'
 import ShareButton from './../components/common/ShareButton'
 import CommonRoutes from './Common'
 
-import {StackNavHeaderStyles} from '../styles/styles'
+import {StackNavHeaderStyles} from '../styles/light-theme'
 
 const MovieDetailsRoutes = {
   MovieDetails: {

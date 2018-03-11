@@ -7,7 +7,8 @@ import TvShowStack from './routes/TvShows'
 import SearchStack from './routes/Search'
 import SettingsStack from './routes/Settings'
 
-import { primaryColor } from './styles/styles.js'
+// import { primaryColor, headerBackgroundColor, headerBorderColor } from './styles/styles.js'
+import { primaryColor, headerBackgroundColor, headerBorderColor } from './styles/light-theme'
 
 // Application router
 const MainScreen = TabNavigator({
@@ -46,8 +47,8 @@ const MainScreen = TabNavigator({
     activeTintColor: primaryColor,
     inactiveTintColor: '#a9a9a9',
     style: {
-      backgroundColor: '#222',
-      borderTopColor: '#181818',
+      backgroundColor: headerBackgroundColor,
+      borderTopColor: headerBorderColor,
       borderTopWidth: 1
     }
   },

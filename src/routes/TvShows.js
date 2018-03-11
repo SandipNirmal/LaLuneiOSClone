@@ -10,7 +10,7 @@ import SeasonDetails from '../components/tv/SeasonDetails'
 import CommonRoutes from './Common'
 import ShareButton from './../components/common/ShareButton'
 
-import {StackNavHeaderStyles} from '../styles/styles'
+import {StackNavHeaderStyles} from '../styles/light-theme'
 
 const TvShowDetailsRoutes = {
   TvShowDetails: {

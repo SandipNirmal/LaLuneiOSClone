@@ -1,7 +1,7 @@
 import React from 'react'
 import {View, Text, Image} from 'react-native'
 
-import style from '../../styles/styles'
+import style from '../../styles/light-theme'
 
 const SearchItem = ({item, config}) => {
   const { secureBaseUrl, profileSize, posterSizeForImageList } = config.image

@@ -10,7 +10,7 @@ import {
 import { TouchableImage, TouchableText } from './Touchable'
 import * as _ from 'lodash'
 
-import style from '../../styles/styles'
+import style from '../../styles/light-theme'
 
 const HorizontalImageList = (props) => (
   <View style={style.container}>

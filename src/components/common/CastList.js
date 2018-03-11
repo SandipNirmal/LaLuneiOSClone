@@ -10,7 +10,7 @@ import {
 } from 'react-native'
 import PropTypes from 'prop-types'
 
-import style from '../../styles/styles'
+import style from '../../styles/light-theme'
 
 const CastList = (props) => {
   return (

@@ -2,7 +2,7 @@ import {StackNavigator} from 'react-navigation'
 
 import Settings from './../components/settings/Settings'
 import SettingDetails from './../components/settings/SettingsDetail'
-import {StackNavHeaderStyles} from '../styles/styles'
+import {StackNavHeaderStyles, headerBackgroundColor} from '../styles/light-theme'
 
 const SettingsStack = StackNavigator({
   Settings: {
@@ -28,7 +28,7 @@ const SettingsStack = StackNavigator({
 }, {
   headerMode: 'float',
   cardStyle: {
-    backgroundColor: '#181818'
+    backgroundColor: headerBackgroundColor
   }
 })
 

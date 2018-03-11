@@ -6,7 +6,7 @@ import { MovieDetailsRoutes } from './Movies'
 import { TvShowDetailsRoutes } from './TvShows'
 import ShareButton from '../components/common/ShareButton'
 
-import {StackNavHeaderStyles} from '../styles/styles'
+import {StackNavHeaderStyles, headerBackgroundColor} from '../styles/light-theme'
 
 const SearchStack = StackNavigator(
   {
@@ -23,7 +23,7 @@ const SearchStack = StackNavigator(
   {
     headerMode: 'float',
     cardStyle: {
-      backgroundColor: '#181818'
+      backgroundColor: headerBackgroundColor
       // backgroundColor: 'rgba(4, 4, 4, 0.6)'
     }
   }

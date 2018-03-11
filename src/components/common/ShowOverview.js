@@ -3,7 +3,7 @@ import {View, Text, StyleSheet} from 'react-native'
 import {Icon} from 'react-native-elements'
 import PropTypes from 'prop-types'
 
-import style, { primaryColor } from '../../styles/styles'
+import style, { primaryColor } from '../../styles/light-theme'
 
 const ShowOverview = (props) => {
   return (

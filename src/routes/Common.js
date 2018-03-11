@@ -2,7 +2,7 @@ import React from 'react'
 import CastDetails from '../components/common/CastDetails'
 import VideoPlayer from '../components/common/VideoPlayer'
 import ShareButton from '../components/common/ShareButton'
-import {StackNavHeaderStyles} from '../styles/styles'
+import {StackNavHeaderStyles} from '../styles/light-theme'
 
 const CommonRoutes = {
   CastDetails: {

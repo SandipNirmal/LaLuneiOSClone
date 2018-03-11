@@ -3,7 +3,7 @@ import {Text, View, TouchableOpacity} from 'react-native'
 import {Icon} from 'react-native-elements'
 import {connect} from 'react-redux'
 
-import styles from '../../styles/styles'
+import styles from '../../styles/light-theme'
 
 const TrailerItem = ({style, video, onPlay}) => {
   return (

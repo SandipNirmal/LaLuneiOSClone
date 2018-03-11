@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import { selectedMovie } from '../../Actions'
 import { NavigationActions } from 'react-navigation'
 
-import style from '../../styles/styles'
+import style from '../../styles/light-theme'
 
 // return device width and height
 const {height, width} = Dimensions.get('window')

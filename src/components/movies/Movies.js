@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import {selectedMovie, fetchingMovies, movieFetched} from '../../Actions'
 import {NavigationActions} from 'react-navigation'
 
-import style from '../../styles/styles'
+import style from '../../styles/light-theme'
 
 class Movies extends Shows {
   constructor (props) {

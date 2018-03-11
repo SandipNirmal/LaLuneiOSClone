@@ -9,7 +9,8 @@ import {Avatar} from 'react-native-elements'
 import {getUriPopulated} from '../utilities/utils'
 import Constant from '../utilities/constants'
 
-import style, {primaryColor} from '../styles/styles'
+// import style, {primaryColor} from '../styles/light-theme'
+import style, {primaryColor} from '../styles/light-theme'
 
 class SplashScreen extends Component {
   componentDidMount() {

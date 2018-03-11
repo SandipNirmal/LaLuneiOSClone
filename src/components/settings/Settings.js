@@ -5,7 +5,8 @@ import { connect } from 'react-redux';
 
 import { saveSettingsAction } from './../../Actions'
 import { MovieDBListItem, TouchableListItem } from './../common/ListItem';
-import style from './../../styles/styles';
+// import style from './../../styles/styles';
+import style from './../../styles/light-theme';
 
 const appInfo = [
   {

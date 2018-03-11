@@ -4,7 +4,7 @@ import { SearchBar, ButtonGroup } from 'react-native-elements'
 import * as _ from 'lodash';
 import axios from 'axios'
 
-import style, { primaryColor } from '../../styles/styles';
+import style, { primaryColor } from '../../styles/light-theme';
 import Constant from '../../utilities/constants';
 import SearchResult from './SearchResult';
 import { 

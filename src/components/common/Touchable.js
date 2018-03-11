@@ -5,7 +5,7 @@ import {
   Text, TouchableOpacity
 } from 'react-native'
 
-import style from '../../styles/styles'
+import style from '../../styles/light-theme'
 
 export const TouchableImage = (props) => (
   <TouchableOpacity

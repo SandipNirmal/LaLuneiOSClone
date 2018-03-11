@@ -2,7 +2,8 @@ import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 import { Icon } from 'react-native-elements'
 
-import style from './../../styles/styles'
+// import style from './../../styles/styles'
+import style from './../../styles/light-theme';
 
 const ListItem = ({name, value, selected}) => {
   return (

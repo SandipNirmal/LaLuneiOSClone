@@ -3,8 +3,8 @@ import {StyleSheet, Platform} from 'react-native'
 import APP_CONSTANT from './../utilities/constants.js'
 const marginTop = APP_CONSTANT.height / APP_CONSTANT.goldenRatio
 const primaryColor = '#32CD32'
-const headerBackgroundColor = '#222222'
-const headerBorderColor = '#181818'
+const headerBackgroundColor = '#F1F1F1'
+const headerBorderColor = '#E1E1E1'
 
 const style = StyleSheet.create({
   container: {
@@ -17,7 +17,7 @@ const style = StyleSheet.create({
     paddingBottom: 30,
     paddingLeft: 10,
     paddingRight: 10,
-    backgroundColor: 'rgba(32, 32, 32, 0.9)'
+    backgroundColor: '#FFFFFF'
   },
   flatListContainer: {
     flex: 1,
@@ -27,10 +27,10 @@ const style = StyleSheet.create({
     backgroundColor: headerBackgroundColor
   },
   headerTextColor: {
-    color: '#CFCFCF'
+    color: '#333333'
   },
   text: {
-    color: '#ffffff'
+    color: '#444444'
   },
   titleText: {
     fontSize: 24,
@@ -53,7 +53,7 @@ const style = StyleSheet.create({
     fontSize: 12
   },
   secondaryText: {
-    color: '#e1e1e1',
+    color: '#616161',
     paddingBottom: 4
   },
   textStickToBottom: {
@@ -68,13 +68,13 @@ const style = StyleSheet.create({
   castBackground: {
     flex: 1,
     height: (0.618 * (APP_CONSTANT.height - 104)),
-    backgroundColor: '#595959',
+    backgroundColor: '#B5B5B5',
     alignItems: 'center',
     justifyContent: 'center'
   },
   castBiography: {
     padding: 20,
-    backgroundColor: 'rgba(32, 32, 32, 0.9)'
+    backgroundColor: '#FFFFFF'
   },
   avatarSize: {
     // backgroundColor: '#545454',
@@ -95,20 +95,21 @@ const style = StyleSheet.create({
     textAlign: 'center'
   },
   imagePlaceholder: {
-    backgroundColor: '#545454'
+    backgroundColor: '#C4C4C4'
   },
   screenBackgroundColor: {
     // backgroundColor: 'rgba(4, 4, 4, 0.75)'
-    backgroundColor: '#181818'
+    // backgroundColor: '#E8E8E8'
+    backgroundColor: '#F1F1F1'
   },
   splashScreenBackground: {
-    backgroundColor: '#040404'
+    backgroundColor: '#F4F4F4'
   },
   trailerContainer: {
     borderWidth: 1,
     borderStyle: 'solid',
-    borderColor: '#616161',
-    backgroundColor: '#020202'
+    borderColor: '#A1A1A1',
+    backgroundColor: '#F2F2F2'
   },
   trailerPlayIcon: {},
   trailerTitle: {
@@ -142,9 +143,9 @@ const style = StyleSheet.create({
     flexDirection: 'row',
     padding: 2,
     margin: 6,
-    backgroundColor: '#393939',
+    backgroundColor: '#C9C9C9',
     shadowRadius: 0,
-    shadowColor: '#191919'
+    shadowColor: '#090909'
   },
   searchItemImage: {
     width: 64,
@@ -205,7 +206,7 @@ const style = StyleSheet.create({
     paddingRight: 5
   },
   popularSearchContainer: {
-    flex:1,
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
   },

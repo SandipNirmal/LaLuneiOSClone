@@ -5,7 +5,7 @@ import {selectedTvShow, fetchingTvShows, tvShowsFetched} from '../../Actions'
 import {NavigationActions} from 'react-navigation'
 import * as _ from 'lodash'
 
-import style from '../../styles/styles'
+import style from '../../styles/light-theme'
 
 class TvShows extends Shows {
   constructor (props) {

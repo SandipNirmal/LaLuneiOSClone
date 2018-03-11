@@ -2,7 +2,7 @@ import React from 'react'
 import {View, ScrollView, TouchableOpacity} from 'react-native'
 
 import PopularSearch from './../search/PopularSearch';
-import style from '../../styles/styles'
+import style from '../../styles/light-theme'
 import SearchItem from './SearchItem'
 
 const SearchResult = ({items, popular, config, onSelect, onSelectPopular}) => {

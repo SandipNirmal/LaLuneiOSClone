@@ -18,7 +18,7 @@ import TrailerList from '../common/TrailerList';
 import CastDetails from '../common/CastDetails';
 
 import { getUriPopulated } from '../../utilities/utils';
-import style, {marginTop} from '../../styles/styles';
+import style, {marginTop} from '../../styles/light-theme';
 
 class Details extends Component {
   constructor(props) {

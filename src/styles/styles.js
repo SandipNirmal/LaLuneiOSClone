@@ -7,6 +7,18 @@ const headerBackgroundColor = '#222222'
 const headerBorderColor = '#181818'
 const backgroundColor = 'rgba(32, 32, 32, 0.9)'
 
+const headerBackgroundColor_dark = '#222222'
+const headerBorderColor_dark = '#181818'
+const backgroundColor_dark = 'rgba(32, 32, 32, 0.9)'
+const textColor_dark = '#FFFFFF'
+const headerTextColor_dark = '#CFCFCF'
+
+const headerBackgroundColor_light = '#F1F1F1'
+const headerBorderColor_light = '#E1E1E1'
+const backgroundColor_light = '#FFFFFF'
+const textColor_light = '#444444'
+const headerTextColor_light = '#333333'
+
 const style = StyleSheet.create({
   container: {
     marginTop: 10,

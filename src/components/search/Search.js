@@ -74,6 +74,7 @@ class Search extends Component {
       <View>
         <SearchBar
           style={{marginTop: 20}}
+          // lightTheme
           round
           onChangeText={this.onTextChange}
           onClearText={this.onClearText}

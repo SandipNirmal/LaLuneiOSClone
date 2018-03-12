@@ -37,7 +37,7 @@ react-native link react-native-orientation
 react-native link react-native-vector-icons
 
 // link environment variables
-react-native link react-native-configs
+react-native link react-native-config
 
 ```
 #### Run Application

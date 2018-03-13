@@ -193,7 +193,7 @@ const style = StyleSheet.create({
     flexGrow: 1,
     flexDirection: 'row',
     height: 54,
-    backgroundColor: 'rgba(255, 255, 255, 0.05)',
+    backgroundColor: 'rgba(0, 0, 0, 0.05)',
     justifyContent: 'space-between',
     alignItems: 'center',
     marginBottom: 4
@@ -213,6 +213,11 @@ const style = StyleSheet.create({
   },
   popularSearch: {
     marginTop: 4
+  },
+  settingDetailsTitle: {
+    marginTop: 6, 
+    marginBottom: 8,
+    marginLeft: 6
   }
 })
 

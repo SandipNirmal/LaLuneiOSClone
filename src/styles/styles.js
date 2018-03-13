@@ -232,6 +232,11 @@ const style = StyleSheet.create({
   },
   popularSearch: {
     marginTop: 4
+  },
+  settingDetailsTitle: {
+    marginTop: 6, 
+    marginBottom: 8,
+    marginLeft: 6
   }
 })
 

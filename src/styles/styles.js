@@ -19,6 +19,14 @@ const backgroundColor_light = '#FFFFFF'
 const textColor_light = '#444444'
 const headerTextColor_light = '#333333'
 
+
+const TODO_background_color = ""
+const TODO_Header_footer_color = ""
+const TODO_Footer_icon_color = ""
+const TODO_text_colors = ""
+
+// TODO: Settings list item color
+
 const style = StyleSheet.create({
   container: {
     marginTop: 10,

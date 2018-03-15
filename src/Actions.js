@@ -1,5 +1,6 @@
 import axios from 'axios'
 import {AsyncStorage} from 'react-native'
+import theme from 'react-native-theme';
 
 import {getSeasonDetails} from './services/seasons';
 import {getCastDetails} from './services/person';
@@ -164,6 +165,9 @@ export const saveSettingsAction = async (values = initialState['settings']) => {
   try {
     await AsyncStorage.setItem(SETTINGS_KEY, JSON.stringify(values))
     const payload = JSON.parse(await AsyncStorage.getItem(SETTINGS_KEY))
+
+    // TODO - Might need to seperate each settings action handlers
+    theme.active(payload.theme);
 
     return {
       type: SAVE_SETTINGS,

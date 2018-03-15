@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { View, ScrollView, Text, Button } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 import { connect } from 'react-redux';
+import {styles} from 'react-native-theme';
 
 import { saveSettingsAction } from './../../Actions'
 import { MovieDBListItem, TouchableListItem } from './../common/ListItem';
 // import style from './../../styles/styles';
-import style from './../../styles/light-theme';
+// import style from './../../styles/light-theme';
 
 const appInfo = [
   {
@@ -41,7 +42,7 @@ class Settings extends Component {
     return (
       <View>
         <ScrollView style={{marginTop: 20,minHeight: 400}}>
-          <Text style={[style.text, style.headingText]}>
+          <Text style={[styles.text, styles.headingText, styles.settingDetailsTitle]}>
             About
           </Text>
           {appInfo.map((info, index) => (
@@ -49,11 +50,12 @@ class Settings extends Component {
           ))}
 
           <View style={{marginTop: 20}}>
-            <Text style={[style.text, style.headingText]}>
+            <Text style={[styles.text, styles.headingText, styles.settingDetailsTitle]}>
               Language and Region
             </Text>
 
-            {settings.map(({name, values}) => (<TouchableListItem
+            {settings.map(({name, values}) => (
+            <TouchableListItem
               key={name}
               name={name}
               onPress={() => {

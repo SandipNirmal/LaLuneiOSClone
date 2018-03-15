@@ -469,7 +469,7 @@ theme.add({
     padding: 20,
     backgroundColor: backgroundColor_light
   },
-}, 'light');
+}, 'Light');
 
 // Style for dark theme
 theme.add({
@@ -488,7 +488,7 @@ theme.add({
     padding: 20,
     backgroundColor: backgroundColor_dark
   },
-}, 'dark');
+}, 'Dark');
 
 const StackNavHeaderStyles = {
   headerTitleStyle: {

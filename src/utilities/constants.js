@@ -6,7 +6,7 @@ const tabBarHeight = 54
 
 const APP_CONSTANT = {
   api_base_url: Config.API_ENDPOINT,
-  api_key: `api_key=${Config.API_KEY}`,
+  api_key: `${Config.API_KEY}`,
   lan_region: '&language=IN-hi&region=IN&page=1',
   goldenRatio: 1.618,
   width,

@@ -4,7 +4,8 @@ import { connect } from 'react-redux'
 
 import { fetchSettingsAction } from './../../Actions'
 import {TouchableListItem} from './../common/ListItem'
-import style from './../../styles/styles'
+// import style from './../../styles/styles'
+import theme, {styles} from 'react-native-theme'
 
 class SettingDetails extends Component {
 
@@ -24,9 +25,8 @@ class SettingDetails extends Component {
 
     return (
       <View>
-        <Text style={[style.Text, style.subHeading, style.settingDetailsTitle]}>
-          {name}
-          Settings
+        <Text style={[styles.Text, styles.subHeading, styles.settingDetailsTitle]}>
+          {name} Settings
         </Text>
   
         {values.map((value) => (

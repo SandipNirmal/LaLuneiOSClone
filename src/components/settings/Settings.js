@@ -42,32 +42,33 @@ class Settings extends Component {
     return (
       <View>
         <ScrollView style={{marginTop: 20,minHeight: 400}}>
-          <Text style={[styles.text, styles.headingText, styles.settingDetailsTitle]}>
+          <Text style={[styles.Text, styles.subHeading, styles.settingDetailsTitle]}>
             About
           </Text>
           {appInfo.map((info, index) => (
-          <MovieDBListItem name={info.name} value={info.value} key={index}/>
+            <MovieDBListItem name={info.name} value={info.value} key={index}/>
           ))}
 
           <View style={{marginTop: 20}}>
-            <Text style={[styles.text, styles.headingText, styles.settingDetailsTitle]}>
+            <Text style={[styles.Text, styles.subHeading, styles.settingDetailsTitle]}>
               Language and Region
             </Text>
 
             {settings.map(({name, values}) => (
-            <TouchableListItem
-              key={name}
-              name={name}
-              onPress={() => {
-              this.props.navigation.dispatch(NavigationActions.navigate({
-                  routeName: 'SettingDetails',
-                  params: {
-                    name,
-                    values,
-                    onSelect: this.onSettingsChange
-                  }
-                }))
-            }}/>))}
+              <TouchableListItem
+                key={name}
+                name={name}
+                onPress={() => {
+                this.props.navigation.dispatch(NavigationActions.navigate({
+                    routeName: 'SettingDetails',
+                    params: {
+                      name,
+                      values,
+                      onSelect: this.onSettingsChange
+                    }
+                  }))
+              }}/>
+            ))}
           </View>
         </ScrollView>
       </View>

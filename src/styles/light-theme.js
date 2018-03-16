@@ -99,8 +99,6 @@ const style = StyleSheet.create({
     backgroundColor: '#C4C4C4'
   },
   screenBackgroundColor: {
-    // backgroundColor: 'rgba(4, 4, 4, 0.75)'
-    // backgroundColor: '#E8E8E8'
     backgroundColor: backgroundColor
   },
   splashScreenBackground: {

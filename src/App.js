@@ -5,7 +5,7 @@ import {StyleSheet, View, StatusBar} from 'react-native'
 import Orientation from 'react-native-orientation'
 import promise from 'redux-promise'
 // TODO - Add theme support in root
-// import theme from 'react-native-theme'
+import theme from 'react-native-theme'
 
 import AppNavigation from './components/AppNavigation'
 import SplashScreen from './components/SplashScreen'
@@ -43,9 +43,11 @@ export default class App extends Component {
     Orientation.lockToPortrait()
   }
 
-  // componentWillMount() {
-  //   theme.setRoot(this);
-  // }
+  componentWillMount() {
+    theme.setRoot(this);
+
+    theme.active('Light');
+  }
 
   render () {
     // TODO - Use redux-promise middleware properly

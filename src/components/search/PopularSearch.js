@@ -1,9 +1,9 @@
 import React from 'react'
-
 import {View, TouchableOpacity, Text} from 'react-native'
+import {styles} from 'react-native-theme'
+
 // import style from './../../styles/styles'
 // import style from './../../styles/light-theme'
-import {styles} from 'react-native-theme';
 
 const PopularSearch = ({data, onSelect}) => {
 

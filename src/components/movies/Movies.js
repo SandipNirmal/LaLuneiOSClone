@@ -3,8 +3,9 @@ import Shows from '../base/Shows'
 import {connect} from 'react-redux'
 import {selectedMovie, fetchingMovies, movieFetched} from '../../Actions'
 import {NavigationActions} from 'react-navigation'
+// import {styles} from 'react-native-theme'
 
-import style from '../../styles/light-theme'
+// import style from '../../styles/light-theme'
 
 class Movies extends Shows {
   constructor (props) {

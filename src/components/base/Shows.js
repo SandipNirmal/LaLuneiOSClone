@@ -4,6 +4,7 @@ import {
   ScrollView
 } from 'react-native'
 import axios from 'axios'
+import {styles} from 'react-native-theme'
 
 import HorizontalImageList from '../common/ImageList'
 import Carousel from '../common/Carousel'
@@ -49,10 +50,10 @@ class Shows extends Component {
 
     return (
       isFetching
-        ? <ScrollView style={style.screenBackgroundColor}>
+        ? <ScrollView style={styles.screenBackgroundColor}>
           <ActivityIndicator size='large' color={primaryColor} />
         </ScrollView>
-        : <ScrollView style={style.screenBackgroundColor}>
+        : <ScrollView style={styles.screenBackgroundColor}>
           <Carousel
             images={getUriPopulated(categories[this.carouselCategory], config, 'backdropSize')}
             onPress={onShowDetails.bind(this)}

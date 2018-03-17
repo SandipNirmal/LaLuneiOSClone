@@ -1,14 +1,15 @@
 import React, {Component} from 'react'
+import { connect } from 'react-redux'
+import { NavigationActions } from 'react-navigation'
+
 import Details from '../base/Details'
 import Constant from '../../utilities/constants'
 import CastList from '../common/CastList'
-import { connect } from 'react-redux'
 import {
   castSelected,
   searchItemDetailsFetched,
   movieDetailsFetched
 } from '../../Actions'
-import { NavigationActions } from 'react-navigation'
 
 class MovieDetails extends Details {
   componentDidMount () {

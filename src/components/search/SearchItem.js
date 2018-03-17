@@ -1,7 +1,8 @@
 import React from 'react'
 import {View, Text, Image} from 'react-native'
+import {styles} from 'react-native-theme'
 
-import style from '../../styles/light-theme'
+// import style from '../../styles/light-theme'
 
 const SearchItem = ({item, config}) => {
   const { secureBaseUrl, profileSize, posterSizeForImageList } = config.image
@@ -18,13 +19,13 @@ const SearchItem = ({item, config}) => {
   console.log('uri ', uri)
 
   return (
-    <View style={style.searchItem}>
-      <View style={[style.searchItemImage, style.imagePlaceholder]}>
-        <Image source={{uri}} style={style.searchItemImage} />
+    <View style={styles.searchItem}>
+      <View style={[styles.searchItemImage, styles.imagePlaceholder]}>
+        <Image source={{uri}} style={styles.searchItemImage} />
       </View>
-      <View style={style.searchItemData}>
-        <Text style={[style.text, style.headingText]}>{name || title}</Text>
-        <Text style={[style.text, style.normalText]}>{media_type.toUpperCase()}</Text>
+      <View style={styles.searchItemData}>
+        <Text style={[styles.text, styles.headingText]}>{name || title}</Text>
+        <Text style={[styles.text, styles.normalText]}>{media_type.toUpperCase()}</Text>
       </View>
     </View>
   )

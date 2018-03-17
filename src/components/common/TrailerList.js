@@ -1,8 +1,9 @@
 import React from 'react'
 import {View, Text, ScrollView} from 'react-native'
+import {styles} from 'react-native-theme'
 
 import TrailerItem from './TrailerItem'
-import style from '../../styles/light-theme'
+// import style from '../../styles/light-theme'
 
 const Trailer = (props) => {
   const showTrailers = () => {
@@ -10,7 +11,7 @@ const Trailer = (props) => {
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        style={style.posterList}>
+        style={styles.posterList}>
 
         {props.videos.map((video, index) => (
           <TrailerItem key={index} video={video} onPlay={props.playVideo} />
@@ -20,13 +21,13 @@ const Trailer = (props) => {
   }
   return (
     <View>
-      <Text style={[style.text, style.headingText, style.detailHeadings]}>Trailers</Text>
+      <Text style={[styles.text, styles.headingText, styles.detailHeadings]}>Trailers</Text>
 
       {props.videos.length
         ? showTrailers()
         : <View style={{height: 100, alignContent: 'center', alignItems: 'center'}}>
           <Text
-            style={[style.text, style.subHeadingText]}>
+            style={[styles.text, styles.subHeadingText]}>
             No Trailers
           </Text>
         </View>

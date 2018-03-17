@@ -45,8 +45,7 @@ export default class App extends Component {
 
   componentWillMount() {
     theme.setRoot(this);
-
-    theme.active('Light');
+    theme.active('Dark');
   }
 
   render () {

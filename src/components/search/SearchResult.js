@@ -1,14 +1,14 @@
 import React from 'react'
 import {View, ScrollView, TouchableOpacity} from 'react-native'
+import {styles} from 'react-native-theme'
 
 import PopularSearch from './../search/PopularSearch';
-import style from '../../styles/light-theme'
 import SearchItem from './SearchItem'
 
 const SearchResult = ({items, popular, config, onSelect, onSelectPopular}) => {
   return (
     <View>
-      <ScrollView style={style.searchResult}>
+      <ScrollView style={styles.searchResult}>
         {items.length ? 
         items.map((item, index) => (
           <TouchableOpacity key={index} onPress={() => { onSelect(item) }}>

@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import {WebView, StyleSheet} from 'react-native'
+import {styles} from 'react-native-theme'
 
-import style from '../../styles/light-theme'
+// import style from '../../styles/light-theme'
 import Orientation from 'react-native-orientation'
 
 export default class VideoPlayer extends Component {
@@ -23,7 +24,7 @@ export default class VideoPlayer extends Component {
   render () {
     return (
       <WebView
-        style={style.flexContainer}
+        style={styles.flexContainer}
         javaScriptEnabled
         domStorageEnabled
         allowsInlineMediaPlayback

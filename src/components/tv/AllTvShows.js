@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import {Dimensions} from 'react-native'
-import { FlatImageList } from '../common/ImageList'
 import { connect } from 'react-redux'
-import { selectedTvShow } from '../../Actions'
+import {styles} from 'react-native-theme'
 import { NavigationActions } from 'react-navigation'
 
-import style from '../../styles/light-theme'
+import { selectedTvShow } from '../../Actions'
+import { FlatImageList } from '../common/ImageList'
+
+// import style from '../../styles/light-theme'
 
 // return device width and height
 const {height, width} = Dimensions.get('window')
@@ -20,8 +22,8 @@ class AllTvShows extends Component {
       <FlatImageList
         numColumns={config.image.numColumns}
         style={{
-          bgColor: style.screenBackgroundColor,
-          imageStyle: config.style.posterSize
+          bgColor: styles.screenBackgroundColor,
+          imageStyle: config.styles.posterSize
         }}
         images={categories[category.toCategory()]}
         onPress={onShowDetails.bind(this)}

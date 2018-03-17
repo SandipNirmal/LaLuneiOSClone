@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import {Dimensions} from 'react-native'
 import { StackNavigator } from 'react-navigation'
-import { FlatImageList } from '../common/ImageList'
+import {styles} from 'react-native-theme'
 import { connect } from 'react-redux'
-import { selectedMovie } from '../../Actions'
 import { NavigationActions } from 'react-navigation'
 
-import style from '../../styles/light-theme'
+import { FlatImageList } from '../common/ImageList'
+import { selectedMovie } from '../../Actions'
+// import style from '../../styles/light-theme'
 
 // return device width and height
 const {height, width} = Dimensions.get('window')
@@ -22,7 +23,7 @@ class AllMovies extends Component {
       <FlatImageList
         numColumns={config.image.numColumns}
         style={{
-          bgColor: style.screenBackgroundColor,
+          bgColor: styles.screenBackgroundColor,
           imageStyle: config.style.posterSize
         }}
         images={categories[category.toCategory()]}

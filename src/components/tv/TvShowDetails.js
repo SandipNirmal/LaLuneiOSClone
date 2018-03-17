@@ -1,17 +1,18 @@
 import React, {Component} from 'react'
+import * as _ from 'lodash'
+import { connect } from 'react-redux'
+import { NavigationActions } from 'react-navigation'
+
 import Details from '../base/Details'
 import Constant from '../../utilities/constants'
 import HorizontalImageList from '../common/ImageList'
-import style from '../../styles/light-theme'
-import * as _ from 'lodash'
+// import style from '../../styles/light-theme'
 import { getUriPopulated } from '../../utilities/utils'
-import { connect } from 'react-redux'
 import {
   castSelected,
   searchItemDetailsFetched,
   tvShowDetailsFetched
 } from '../../Actions'
-import { NavigationActions } from 'react-navigation'
 
 class TvShowDetails extends Details {
   componentDidMount () {

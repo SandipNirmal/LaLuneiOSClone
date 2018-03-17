@@ -7,28 +7,29 @@ import {
   ScrollView, StyleSheet,
   View
 } from 'react-native'
-import { TouchableImage, TouchableText } from './Touchable'
+import {styles} from 'react-native-theme'
 import * as _ from 'lodash'
 
-import style from '../../styles/light-theme'
+import { TouchableImage, TouchableText } from './Touchable'
+// import style from '../../styles/light-theme'
 
 const HorizontalImageList = (props) => (
-  <View style={style.container}>
+  <View style={styles.container}>
     <Title {...props} />
     <ScrollView horizontal
       showsHorizontalScrollIndicator={false}
-      style={styles.posterList}>
+      style={Styles.posterList}>
       {props.images.map((image, index) => (
         props.isTouchableImage
           ? <TouchableImage
             key={index}
-            style={[style.imagePlaceholder, props.style]}
+            style={[styles.imagePlaceholder, props.style]}
             onPress={() => props.onPress(image)}
             uri={image.uri}
           />
           : <Image
             key={index}
-            style={[style.imagePlaceholder, props.style]}
+            style={[styles.imagePlaceholder, props.style]}
             source={{uri: _.isString(image) ? image : image.uri}}
           />
       ))}
@@ -39,8 +40,8 @@ const HorizontalImageList = (props) => (
 // TODO: See All should be of normatText. Nesting of text should fix it
 // since TouchableText is involved, the situaion gets complicated.Fix this
 const Title = (props) => (
-  <View style={styles.titleContainer}>
-    <Text style={[style.text, style.headingText]}>
+  <View style={Styles.titleContainer}>
+    <Text style={[styles.text, styles.headingText]}>
       {props.title}
     </Text>
     {
@@ -89,7 +90,7 @@ const FlatImageList = (props) => (
       <TouchableImage
         key={item.id}
         onPress={() => props.onPress(item)}
-        style={[props.style.imageStyle, styles.flatList]}
+        style={[props.style.imageStyle, Styles.flatList]}
         uri={item.uri}
       />
     }
@@ -107,7 +108,7 @@ FlatImageList.protoTypes = {
   ])
 }
 
-const styles = StyleSheet.create({
+const Styles = StyleSheet.create({
   // TODO: does ios have a standard? if so use that
   // Image size for poster size w92 on TMDB
   posterList: {

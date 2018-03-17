@@ -9,6 +9,7 @@ import {
   Platform
 } from 'react-native';
 import axios from 'axios'
+import {styles} from 'react-native-theme'
 
 import BackgroundImage from '../common/BackgroundImage';
 import ShowOverview from '../common/ShowOverview';
@@ -122,7 +123,7 @@ class Details extends Component {
     const bgImage = `${secureBaseUrl}${posterSizeForBackground}/${poster_path}`;
 
     return (
-      <View style={[{ flex: 1 }, style.screenBackgroundColor]}>
+      <View style={[{ flex: 1 }, styles.screenBackgroundColor]}>
         <BackgroundImage 
           uri={bgImage} 
           opacity={this.state.opacity}
@@ -131,8 +132,8 @@ class Details extends Component {
 
         { // TODO - Disabling onScroll blur. Need better solution
           /* onScroll={this.handleOnScroll} scrollEventThrottle={160} */}
-          <View style={style.detailsContainer}>
-            <Text style={[style.text, style.titleText]}>
+          <View style={styles.detailsContainer}>
+            <Text style={[styles.text, styles.titleText]}>
               {title}
             </Text>
 
@@ -142,7 +143,7 @@ class Details extends Component {
               ratings={vote_average}
               />
 
-            <Text style={[style.text, style.normalText]}>
+            <Text style={[styles.text, styles.normalText]}>
               {overview}
             </Text>
 

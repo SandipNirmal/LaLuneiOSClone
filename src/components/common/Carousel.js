@@ -9,7 +9,7 @@ import {
 } from 'react-native'
 import * as _ from 'lodash'
 // import style from './../../styles/styles'
-import {styles} from 'react-native-theme';
+import {styles} from 'react-native-theme'
 
 class Carousel extends Component {
   componentDidMount () {

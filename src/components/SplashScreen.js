@@ -3,9 +3,10 @@ import {ActivityIndicator, Text, View} from 'react-native'
 import * as _ from 'lodash'
 import {connect} from 'react-redux'
 import axios from 'axios'
+import {styles} from 'react-native-theme'
+import {Avatar} from 'react-native-elements'
 
 import {configFetched, movieFetched} from '../Actions'
-import {Avatar} from 'react-native-elements'
 import {getUriPopulated} from '../utilities/utils'
 import Constant from '../utilities/constants'
 
@@ -34,7 +35,7 @@ class SplashScreen extends Component {
 
   render() {
     return (
-      <View style={[style.centerContentContainer, style.splashScreenBackground]}>
+      <View style={[styles.centerContentContainer, styles.splashScreenBackground]}>
         <Avatar
           xlarge
           rounded
@@ -46,7 +47,7 @@ class SplashScreen extends Component {
           fontWeight: '900',
           fontSize: 100
         }}/>
-        <Text style={[style.appName, style.startupScreenTextProps]}>
+        <Text style={[styles.appName, styles.startupScreenTextProps]}>
           MovieDB
         </Text>
         <View style={{
@@ -55,7 +56,7 @@ class SplashScreen extends Component {
         }}>
           <ActivityIndicator size='large' color={primaryColor}/>
         </View>
-        <Text style={[style.titleText, style.startupScreenTextProps]}>
+        <Text style={[styles.titleText, styles.startupScreenTextProps]}>
           For everyone in love with movies and TV Shows
         </Text>
       </View>

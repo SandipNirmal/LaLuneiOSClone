@@ -1,8 +1,10 @@
-import React, {Component} from 'react';
-import {View, Text, StyleSheet, ActivityIndicator} from 'react-native';
+import React, {Component} from 'react'
+import {View, Text, StyleSheet, ActivityIndicator} from 'react-native'
 import { SearchBar, ButtonGroup } from 'react-native-elements'
-import * as _ from 'lodash';
+import * as _ from 'lodash'
 import axios from 'axios'
+import { NavigationActions } from 'react-navigation'
+import { connect } from 'react-redux'
 
 import style, { primaryColor } from '../../styles/light-theme';
 import Constant from '../../utilities/constants';
@@ -12,8 +14,6 @@ import {
   searchFilterChanged, searchingForMoviesEtc, searchResultSelected,
   selectedMovie, selectedTvShow,
 } from '../../Actions';
-import { NavigationActions } from 'react-navigation';
-import { connect } from 'react-redux';
   
 const buttons = ['Movie', 'Tv', 'Person']
 

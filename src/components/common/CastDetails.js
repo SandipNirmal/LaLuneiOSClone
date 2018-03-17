@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {View, Text, Image, ActivityIndicator, ScrollView} from 'react-native'
 import axios from 'axios'
+import {styles} from 'react-native-theme'
 
 import HorizontalImageList from './ImageList'
 import Constant from '../../utilities/constants'
@@ -74,7 +75,7 @@ class CastDetails extends Component {
 
     if (isFetching) {
       return (
-        <ScrollView style={style.screenBackgroundColor}>
+        <ScrollView style={styles.screenBackgroundColor}>
           <ActivityIndicator size='large' color={primaryColor} />
         </ScrollView>
       )
@@ -82,27 +83,27 @@ class CastDetails extends Component {
 
     return (
       <View
-        style={[{flex: 1}, style.screenBackgroundColor]}>
-        <ScrollView style={style.screenBackgroundColor}>
-          <View style={style.castBackground}>
+        style={[{flex: 1}, styles.screenBackgroundColor]}>
+        <ScrollView style={styles.screenBackgroundColor}>
+          <View style={styles.castBackground}>
             <Image
-              style={[style.avatarSize, style.avatarBigSize]}
+              style={[styles.avatarSize, styles.avatarBigSize]}
               source={{
                 uri: details.imageSrc
               }} />
-            <Text style={[style.text, style.titleText]}>
+            <Text style={[styles.text, styles.titleText]}>
               {details.name}
             </Text>
-            <Text style={[style.text, style.normalText]}>
+            <Text style={[styles.text, styles.normalText]}>
               {details.birthday}
             </Text>
-            <Text style={[style.text, style.normalText]}>
+            <Text style={[styles.text, styles.normalText]}>
               {details.place_of_birth}
             </Text>
           </View>
 
-          <View style={[style.castBiography]}>
-            <Text style={[style.text, style.normalText]}>
+          <View style={[styles.castBiography]}>
+            <Text style={[styles.text, styles.normalText]}>
               {details.biography}
             </Text>
 

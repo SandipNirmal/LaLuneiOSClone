@@ -10,8 +10,7 @@ import {configFetched, movieFetched} from '../Actions'
 import {getUriPopulated} from '../utilities/utils'
 import Constant from '../utilities/constants'
 
-// import style, {primaryColor} from '../styles/light-theme'
-import style, {primaryColor} from '../styles/light-theme'
+import {primaryColor} from '../styles/light-theme'
 
 class SplashScreen extends Component {
   componentDidMount() {
@@ -34,6 +33,7 @@ class SplashScreen extends Component {
   }
 
   render() {
+    console.log('styles', styles);
     return (
       <View style={[styles.centerContentContainer, styles.splashScreenBackground]}>
         <Avatar

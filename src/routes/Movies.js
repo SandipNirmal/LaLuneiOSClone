@@ -1,5 +1,6 @@
 import React from 'react'
 import {StackNavigator} from 'react-navigation'
+import theme from 'react-native-theme'
 
 import Movies from '../components/movies/Movies'
 import MovieDetails from '../components/movies/MovieDetails'
@@ -7,7 +8,11 @@ import AllMovies from '../components/movies/AllMovies'
 import ShareButton from './../components/common/ShareButton'
 import CommonRoutes from './Common'
 
-import {StackNavHeaderStyles} from '../styles/light-theme'
+import {StackNavHeaderStyles_Light, StackNavHeaderStyles_Dark} from '../styles/styles'
+
+const StackNavHeaderStyles = theme.name === 'Dark'
+  ? StackNavHeaderStyles_Dark
+  : StackNavHeaderStyles_Light;
 
 const MovieDetailsRoutes = {
   MovieDetails: {

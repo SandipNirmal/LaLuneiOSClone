@@ -2,6 +2,7 @@
 // readability purpose
 import React from 'react'
 import {StackNavigator} from 'react-navigation'
+import theme from 'react-native-theme'
 
 import TvShow from '../components/tv/TvShows'
 import TvShowDetails from '../components/tv/TvShowDetails'
@@ -10,7 +11,11 @@ import SeasonDetails from '../components/tv/SeasonDetails'
 import CommonRoutes from './Common'
 import ShareButton from './../components/common/ShareButton'
 
-import {StackNavHeaderStyles} from '../styles/light-theme'
+import {StackNavHeaderStyles_Light, StackNavHeaderStyles_Dark} from '../styles/styles'
+
+const StackNavHeaderStyles = theme.name === 'Dark'
+  ? StackNavHeaderStyles_Dark
+  : StackNavHeaderStyles_Light;
 
 const TvShowDetailsRoutes = {
   TvShowDetails: {

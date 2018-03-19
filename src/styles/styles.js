@@ -384,18 +384,21 @@ const darkTheme = {
   }
 };
 
-const StackNavHeaderStyles = {
-  headerTitleStyle: {
-    color: '#CFCFCF'
-  },
-  headerStyle: {
-    backgroundColor: headerBackgroundColor
-  },
+const StackNavHeaderStyles_Dark = {
+  headerTitleStyle: darkTheme.headerTextColor,
+  headerStyle: darkTheme.headerBackgroundColor,
+  headerTintColor: primaryColor
+}
+
+const StackNavHeaderStyles_Light = {
+  headerTitleStyle: lightTheme.headerTextColor,
+  headerStyle: lightTheme.headerBackgroundColor,
   headerTintColor: primaryColor
 }
 
 export {
-  StackNavHeaderStyles,
+  StackNavHeaderStyles_Dark,
+  StackNavHeaderStyles_Light,
   primaryColor,
   marginTop,
   headerBackgroundColor, 

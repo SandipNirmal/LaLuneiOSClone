@@ -33,7 +33,6 @@ class SplashScreen extends Component {
   }
 
   render() {
-    console.log('styles', styles);
     return (
       <View style={[styles.centerContentContainer, styles.splashScreenBackground]}>
         <Avatar

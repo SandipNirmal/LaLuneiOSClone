@@ -10,7 +10,7 @@ import {configFetched, movieFetched} from '../Actions'
 import {getUriPopulated} from '../utilities/utils'
 import Constant from '../utilities/constants'
 
-import {primaryColor} from '../styles/light-theme'
+import {primaryColor} from '../styles/styles'
 
 class SplashScreen extends Component {
   componentDidMount() {

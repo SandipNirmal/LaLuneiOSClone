@@ -6,9 +6,11 @@ import VideoPlayer from '../components/common/VideoPlayer'
 import ShareButton from '../components/common/ShareButton'
 import {StackNavHeaderStyles_Light, StackNavHeaderStyles_Dark} from '../styles/styles'
 
-const StackNavHeaderStyles = theme.name === 'Dark'
+const StackNavHeaderStyles = (theme.name === 'Dark' || theme.name === 'default')
   ? StackNavHeaderStyles_Dark
   : StackNavHeaderStyles_Light;
+
+console.log('theme.name', theme.name);
 
 const CommonRoutes = {
   CastDetails: {

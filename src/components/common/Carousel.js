@@ -8,7 +8,6 @@ import {
   View
 } from 'react-native'
 import * as _ from 'lodash'
-// import style from './../../styles/styles'
 import {styles} from 'react-native-theme'
 
 class Carousel extends Component {
@@ -52,8 +51,8 @@ class Carousel extends Component {
         pagingEnabled
         ref={ref => this.scrollView = ref}
         showsHorizontalScrollIndicator={false}
-        style={style.flexContainer}
-      >
+        style={style.flexContainer}>
+
         {images.map((image, index) => (
           <TouchableOpacity
             key={index}

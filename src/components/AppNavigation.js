@@ -3,6 +3,7 @@ import { BackHandler } from 'react-native'
 import { connect } from 'react-redux'
 import { addNavigationHelpers } from 'react-navigation'
 import { NavigationActions } from 'react-navigation'
+
 import MainScreen from '../router'
 
 // Refer https://reactnavigation.org/docs/redux-integration.html

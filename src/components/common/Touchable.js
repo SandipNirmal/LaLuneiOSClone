@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import {Image, Text, TouchableOpacity} from 'react-native'
 import {styles} from 'react-native-theme'
 
-// import style from '../../styles/light-theme'
-
 export const TouchableImage = (props) => (
   <TouchableOpacity
     onPress={() => props.onPress()}>

@@ -11,8 +11,6 @@ import {
 import PropTypes from 'prop-types'
 import {styles} from 'react-native-theme'
 
-// import style from '../../styles/light-theme'
-
 const CastList = (props) => {
   return (
     <View>
@@ -20,14 +18,11 @@ const CastList = (props) => {
         {props.title}
       </Text>
       <ScrollView horizontal>
-        {props
-          .items
-          .map((item, index) => (
+        {props.items.map((item, index) => (
             <TouchableOpacity
               key={index}
               style={styles.avatarContaier}
-              onPress={() => props.onPress(item)}
-            >
+              onPress={() => props.onPress(item)}>
               <Image
                 style={styles.avatarSize}
                 source={{

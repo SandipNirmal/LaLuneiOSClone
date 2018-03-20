@@ -385,14 +385,26 @@ const darkTheme = {
 };
 
 const StackNavHeaderStyles_Dark = {
-  headerTitleStyle: darkTheme.headerTextColor,
-  headerStyle: darkTheme.headerBackgroundColor,
+  headerTitleStyle: {
+    // color: headerTextColor_dark
+    color: '#CFCFCF'
+  },
+  headerStyle: {
+    // backgroundColor: headerBackgroundColor_dark
+    backgroundColor: '#222222'
+  },
   headerTintColor: primaryColor
 }
 
 const StackNavHeaderStyles_Light = {
-  headerTitleStyle: lightTheme.headerTextColor,
-  headerStyle: lightTheme.headerBackgroundColor,
+  headerTitleStyle: {
+    // color: headerTextColor_light
+    color: '#333333'
+  },
+  headerStyle: {
+    // backgroundColor: headerBackgroundColor_light
+    backgroundColor: '#F1F1F1'
+  },
   headerTintColor: primaryColor
 }
 
@@ -401,9 +413,13 @@ export {
   StackNavHeaderStyles_Light,
   primaryColor,
   marginTop,
-  headerBackgroundColor, 
+  headerBackgroundColor,
   headerBorderColor,
   defaultStyle,
   lightTheme,
-  darkTheme
+  darkTheme,
+  headerBackgroundColor_dark,
+  headerBackgroundColor_light
 }
+
+//styles.backdropSize, styles.centerContentContainer, styles.trailerContainer

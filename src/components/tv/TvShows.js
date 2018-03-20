@@ -1,9 +1,11 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
-import Shows from '../base/Shows'
-import {selectedTvShow, fetchingTvShows, tvShowsFetched} from '../../Actions'
 import {NavigationActions} from 'react-navigation'
 import * as _ from 'lodash'
+
+import Shows from '../base/Shows'
+import {selectedTvShow, fetchingTvShows, tvShowsFetched} from '../../Actions'
+
 
 class TvShows extends Shows {
   constructor (props) {

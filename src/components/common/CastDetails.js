@@ -17,7 +17,7 @@ import {
   searchItemDetailsFetched, 
   fetchCastDetails} from '../../Actions'
 
-import style, {primaryColor, StackNavHeaderStyles} from '../../styles/light-theme'
+import {primaryColor} from '../../styles/styles'
 
 class CastDetails extends Component {
   componentDidMount () {

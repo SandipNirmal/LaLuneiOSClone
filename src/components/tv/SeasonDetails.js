@@ -10,7 +10,6 @@ import ShowOverview from '../common/ShowOverview'
 import EpisodeList from './EpisodeList'
 
 import Constant from './../../utilities/constants'
-// import style from '../../styles/light-theme'
 
 class SeasonDetails extends Component {
   // TODO: Use redux store

@@ -5,7 +5,6 @@ import theme, {styles} from 'react-native-theme'
 
 import { fetchSettingsAction } from './../../Actions'
 import {TouchableListItem} from './../common/ListItem'
-// import style from './../../styles/styles'
 
 class SettingDetails extends Component {
 

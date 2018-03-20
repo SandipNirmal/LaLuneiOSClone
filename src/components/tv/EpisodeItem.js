@@ -1,8 +1,6 @@
 import React from 'react'
 import {View, Text, Image} from 'react-native'
 import {connect} from 'react-redux'
-
-// import style from './../../styles/styles'
 import {styles} from 'react-native-theme';
 
 const EpisodeItem = ({data, config}) => {

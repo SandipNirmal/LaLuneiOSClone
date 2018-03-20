@@ -11,7 +11,7 @@ import Carousel from '../common/Carousel'
 import Constant from '../../utilities/constants'
 import { getUriPopulated } from '../../utilities/utils'
 
-import style, { primaryColor } from '../../styles/light-theme'
+import { primaryColor } from '../../styles/styles'
 
 String.prototype.toTitle = function () {
   return this.replace(/([A-Z])/g, ' $1').replace(/(.)/, c => c.toUpperCase())

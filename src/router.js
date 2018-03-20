@@ -9,10 +9,9 @@ import SearchStack from './routes/Search'
 import SettingsStack from './routes/Settings'
 
 import {
-  primaryColor_Dark,
+  primaryColor,
   headerBackgroundColor_Dark,
   headerBorderColor_Dark,
-  primaryColor_Light,
   headerBackgroundColor_Light,
   headerBorderColor_Light
 } from './styles/styles.js'
@@ -20,7 +19,6 @@ import {
 // Theme name
 const themeName = theme.name;
 
-const primaryColor = (themeName === 'Dark' ? primaryColor_Dark :  primaryColor_Light)
 const headerBackgroundColor = (themeName === 'Dark' ? headerBackgroundColor_Dark :  headerBackgroundColor_Light)
 const headerBorderColor = (themeName === 'Dark' ? headerBorderColor_Dark :  headerBorderColor_Light)
 

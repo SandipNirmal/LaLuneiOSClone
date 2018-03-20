@@ -3,9 +3,9 @@ import theme from 'react-native-theme'
 
 import Settings from './../components/settings/Settings'
 import SettingDetails from './../components/settings/SettingsDetail'
-import {StackNavHeaderStyles_Light, StackNavHeaderStyles_Dark, headerBackgroundColor} from '../styles/styles'
+import {StackNavHeaderStyles_Light, StackNavHeaderStyles_Dark, headerBackgroundColor_light, headerBackgroundColor_dark} from '../styles/styles'
 
-const StackNavHeaderStyles = theme.name === 'Dark'
+const StackNavHeaderStyles = (theme.name === 'Dark' || theme.name === 'default')
   ? StackNavHeaderStyles_Dark
   : StackNavHeaderStyles_Light;
 
@@ -33,7 +33,9 @@ const SettingsStack = StackNavigator({
 }, {
   headerMode: 'float',
   cardStyle: {
-    backgroundColor: headerBackgroundColor
+    backgroundColor: (theme.name === 'Dark' || theme.name === 'default')
+      ? headerBackgroundColor_dark
+      : headerBackgroundColor_light
   }
 })
 

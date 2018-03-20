@@ -6,7 +6,6 @@ import { NavigationActions } from 'react-navigation'
 import Details from '../base/Details'
 import Constant from '../../utilities/constants'
 import HorizontalImageList from '../common/ImageList'
-// import style from '../../styles/light-theme'
 import { getUriPopulated } from '../../utilities/utils'
 import {
   castSelected,

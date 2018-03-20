@@ -11,7 +11,6 @@ import {styles} from 'react-native-theme'
 import * as _ from 'lodash'
 
 import { TouchableImage, TouchableText } from './Touchable'
-// import style from '../../styles/light-theme'
 
 const HorizontalImageList = (props) => (
   <View style={styles.container}>

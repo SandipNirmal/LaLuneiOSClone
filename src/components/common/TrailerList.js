@@ -3,7 +3,6 @@ import {View, Text, ScrollView} from 'react-native'
 import {styles} from 'react-native-theme'
 
 import TrailerItem from './TrailerItem'
-// import style from '../../styles/light-theme'
 
 const Trailer = (props) => {
   const showTrailers = () => {

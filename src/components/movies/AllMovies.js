@@ -7,7 +7,6 @@ import { NavigationActions } from 'react-navigation'
 
 import { FlatImageList } from '../common/ImageList'
 import { selectedMovie } from '../../Actions'
-// import style from '../../styles/light-theme'
 
 // return device width and height
 const {height, width} = Dimensions.get('window')

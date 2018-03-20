@@ -7,8 +7,6 @@ import { NavigationActions } from 'react-navigation'
 import { selectedTvShow } from '../../Actions'
 import { FlatImageList } from '../common/ImageList'
 
-// import style from '../../styles/light-theme'
-
 // return device width and height
 const {height, width} = Dimensions.get('window')
 const numColumns = parseInt(width / (92 + (5 * 2)))

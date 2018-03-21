@@ -49,7 +49,7 @@ const Title = (props) => (
           onPress={() => props.onShowAll(props.title, props.images)}
           text='See All &gt;'
         />
-        : null
+        : <Text>''</Text>
     }
   </View>
 )

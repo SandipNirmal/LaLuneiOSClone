@@ -29,8 +29,7 @@ class MovieDetails extends Details {
     return <CastList
       title='Director'
       items={this.props.details.directors || []}
-      onPress={this.showCastDetails.bind(this)}
-    />
+      onPress={this.showCastDetails.bind(this)}/>
   }
 }
 

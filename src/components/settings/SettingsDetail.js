@@ -24,7 +24,7 @@ class SettingDetails extends Component {
 
     return (
       <View>
-        <Text style={[styles.Text, styles.subHeading, styles.settingDetailsTitle]}>
+        <Text style={[styles.text, styles.subHeading, styles.settingDetailsTitle]}>
           {name} Settings
         </Text>
   

@@ -80,17 +80,12 @@ class Details extends Component {
   }
 
   showCastDetails(cast) {
-    this
-      .props
-      .onCastSelected(cast, this.props.currentTab);
+    this.props.onCastSelected(cast, this.props.currentTab);
   }
 
   playVideo(url) {
     if (Platform.OS === 'ios') {
-      this
-        .props
-        .navigation
-        .navigate('VideoPlayer', {url});
+      this.props.navigation.navigate('VideoPlayer', {url});
     } else if (Platform.OS === 'android') {
       Linking
         .openURL(url)
@@ -138,19 +133,13 @@ class Details extends Component {
     const bgImage = `${secureBaseUrl}${posterSizeForBackground}/${poster_path}`;
 
     return (
-      <View
-        style={[
-        {
-          flex: 1
-        },
-        styles.screenBackgroundColor
-      ]}>
+      <View style={[{flex: 1}, styles.screenBackgroundColor]}>
         <BackgroundImage
           uri={bgImage}
           opacity={this.state.opacity}
           blur={this.state.blur}/>
-        <ScrollView>
 
+        <ScrollView>
           {// TODO - Disabling onScroll blur. Need better solution
           /* onScroll={this.handleOnScroll} scrollEventThrottle={160} */}
           <View style={styles.detailsContainer}>
@@ -171,16 +160,14 @@ class Details extends Component {
 
             <TrailerList
               videos={videos || []}
-              playVideo={this
-              .playVideo
-              .bind(this)}/> {this.getSpecialComponent()}
+              playVideo={this.playVideo.bind(this)}/> 
+            
+            {this.getSpecialComponent()}
 
             <CastList
               title="Cast"
               items={casts || []}
-              onPress={this
-              .showCastDetails
-              .bind(this)}/>
+              onPress={this.showCastDetails.bind(this)}/>
           </View>
         </ScrollView>
       </View>
